@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--Experiment:1-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .content-container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+        }
+        form {
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+        .form-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <h1 class="center-text">HeHe</h1>
+
+        <h3>Favorite Sports:</h3>
+        <ol type="A">
+            <li>Cricket</li>
+            <li>Football</li>
+            <li>Hockey</li>
+        </ol>
+
+        <img src="https://picsum.photos/200/300" alt="A random placeholder image">
+
+        <p class="center-text">
+            <a href="pg2.html">Click kar bhai</a>
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Marks</th>
+                    <th colspan="2">Average</th>
+                    <th rowspan="2">Red eye</th>
+                </tr>
+                <tr>
+                    <th>Height</th>
+                    <th>Weight</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Male</td>
+                    <td>17</td>
+                    <td>58</td>
+                    <td>48%</td>
+                </tr>
+                <tr>
+                    <td>Female</td>
+                    <td>19</td>
+                    <td>48</td>
+                    <td>45%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div>
+                <label for="country">Select Country:</label>
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="srilanka">Srilanka</option>
+                    <option value="nepal">Nepal</option>
+                </select>
+            </div>
+            
+            <div>
+                <p><strong>Select Hobbies:</strong></p>
+                <label><input type="checkbox" name="hobby" value="cricket"> Cricket</label><br>
+                <label><input type="checkbox" name="hobby" value="football"> Football</label><br>
+                <label><input type="checkbox" name="hobby" value="hockey"> Hockey</label>
+            </div>
+
+            <div>
+                <label for="file-upload">Select File:</label>
+                <input type="file" id="file-upload" name="file">
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
